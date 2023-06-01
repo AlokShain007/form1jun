@@ -1,0 +1,111 @@
+body{
+   font-family: Arial, sans-serif;
+   background-image: url("./n.jpg");
+  
+   
+   
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color: rgb(151, 195, 233);
+    
+  
+}
+h1{
+  padding-left: 25%;
+}
+
+#f1{
+    padding: 50px;
+  
+        width: 500px;
+   
+        background-color: white;
+        opacity: .85;
+        border:3px solid rgb(177, 240, 240);
+           
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+input[type="textarea"] {
+   
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.imp{
+  color:red;
+}
+
+#name1{
+  margin-left: 25%;
+}
+#name2{
+  
+  margin-left: 16.5%;
+}
+#name3{
+margin-left: 20%;
+}
+#email{
+  margin-left: 25.5%;
+}
+#dob{
+  margin-left: 27%;
+  padding-left:13%;
+}
+#address{
+margin-left: 21%;
+}
+#country{
+  margin-left:22%;
+  padding:1.9%;
+  padding-left: 15%;
+  border-radius: 10px;
+}
+#city{
+  margin-left:27.5%;
+}
+#state{
+  margin-left:25%;
+}
+#zip{
+  margin-left:20.5% ;
+  padding:1.5%;
+  border-radius: 10px;
+  text-align: center;
+
+}
+#username{
+  margin-left:18%;
+}
+#password{
+  margin-left:19.5%;
+}
+#cpass{
+  margin-left:5%;
+}
+#submit{
+  margin-left: 50%;
+  padding :3%;
+  border-radius:10px;
+  text-decoration: wavy;
+}
+#phone{
+  margin-left:2%;
+}

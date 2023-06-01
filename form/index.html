@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="f1">
+        <h1>Regestration Form</h1>
+        <form
+          method="post"
+          action="./myaction.php"
+          onsubmit="return validateForm()"
+        >
+          Name<span class="imp"> *</span> :
+          <input
+            type="text"
+            name="name"
+            id="name1"
+            placeholder="first name"
+            min="2"
+            maxlength="15"
+          /><br />
+          <span id="n11" style="color: red"></span><br /><br />
+          Middle Name :
+          <input
+            type="text"
+            name="name"
+            id="name2"
+            placeholder="midel name"
+            min="2"
+            maxlength="15"
+          /><br />
+          <span id="n12" style="color: red"></span><br />
+          Last Name :
+          <input
+            type="text"
+            name="name"
+            id="name3"
+            placeholder="lastname"
+            min="2"
+            maxlength="15"
+          /><br />
+          <span id="n13" style="color: red"></span><br />
+
+          Email<span class="imp"> *</span> :
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email  "
+            onkeydown=preventSpace(event)
+          /><br />
+          <span id="n14" style="color: red"></span><br />
+
+          DOB<span class="imp"> *</span> :<input
+            type="date"
+            name="date"
+            id="dob"
+            max="2008-01-01"
+            min="1996-01-10"
+          />
+          <br />
+           <span id="n130" style="color: red"></span><br /><br />
+          <br />
+
+          Address <span class="imp"> *</span> :
+          <input
+            type="textarea"
+            name="address"
+            id="address"
+            placeholder=" Address"
+            oninput="addressValidation(event) "
+            oninput="addressValidations(qevent)"
+          />
+          <br />
+          <span id="n15" style="color: red"></span><br />
+
+          <label for="country">Country<span class="imp"> *</span> :</label>
+          <select id="country" onchange="updatePhoneCode()">
+            <option value="">Select Country</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option></select
+          ><br />
+          <span id="n16" style="color: red"></span><br />
+
+          Phone Number <span class="imp"> *</span> :
+          <input
+            type="text"
+            id="phoneCode"
+            class="code"
+            readonly
+            style="width: 22px"
+            maxlength="11"
+            oninput="limitDigits1(event1)"
+          /><span>
+            <input type="number" placeholder="Phone number" id="phone"
+          /></span>
+          <br />
+          <span id="n18" style="color: red"></span><br />
+
+          City<span class="imp"> *</span> :
+          <input type="text" name="city" id="city" placeholder="City" onblur="validateCity()" /> <br />
+          <span id="n26" style="color: red"></span><br />
+          State<span class="imp" > *</span> :
+          <input type="text" name="state" id="state" placeholder="  State" onblur="validateState()"/>
+          <br />
+          <span id="n27" style="color: red"></span><br />
+
+          Zip code <span class="imp"> *</span> :
+          <input
+            type="number"
+            name="zip"
+            id="zip"
+            placeholder=" Zip code"
+            
+            onkeydown=preventSpace(event)
+            
+            oninput="limitDigits(event)"
+          />
+          <br /><span id="n202" style="color: red"></span>
+          <br />
+          <span id="n21" style="color: red"></span><br />
+          username<span class="imp"> *</span> :
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            onkeydown=preventSpace(event)
+            maxlength="16"
+          />
+          <br />
+          <span id="n22" style="color: red"></span><br />
+          Password<span class="imp"> *</span>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+            onkeydown=preventSpace(event)
+            maxlength="16"
+          />
+          <br />
+          <span id="n23" style="color: red"></span><br />
+          Confirm Password<span class="imp"> *</span> :
+          <input
+            type="password"
+            name="cpass"
+            id="cpass"
+            placeholder=" Confirm Password" 
+            onkeydown=preventSpace(event)
+          />
+          <br />
+          <span id="n24" style="color: red"></span><br />
+          <input type="submit" value="Submit" id="submit" /> <br /><br />
+        </form>
+      </div>
+      <div></div>
+    </div>
+  </body>
+
+  <script src="myscript.js"></script>
+</html>
